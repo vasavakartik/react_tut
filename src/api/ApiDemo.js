@@ -11,10 +11,10 @@ export const ApiDemo = () => {
 
     const postData = () =>{
         var data={
-            name:'kartik',
-            job:'engineer'
+            roleName:'kartik',
+           
         }   
-        axios.post("https://reqres.in/api/users",data).then(res=>{
+        axios.post("http://localhost:4000/roles",data).then(res=>{
             console.log(res)
         })
     }
