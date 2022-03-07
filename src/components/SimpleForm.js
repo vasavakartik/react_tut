@@ -35,7 +35,8 @@ export const SimpleForm = () => {
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required onChange={(e)=>passwordHandler(e)}/>
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button> <hr></hr>
+            <button type="reset" class="btn btn-danger">Reset</button>
         </form>
 
 

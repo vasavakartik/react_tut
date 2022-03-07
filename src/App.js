@@ -11,6 +11,8 @@ import { Electronics } from './pages/Electronics';
 import { Fashion } from './pages/Fashion';
 import { Groc } from './pages/Groc';
 import { SimpleForm } from './components/SimpleForm';
+import { EmployeeRagistration } from './components/EmployeeRagistration';
+import { ApiDemo } from './api/ApiDemo';
 
 function App() {
 
@@ -18,18 +20,21 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
+      <ApiDemo/>
+        {/* <EmployeeRagistration/>
 
-      <Routes>
-        <Route path ="/home" element = {<Home/>}></Route>
-        <Route path ="/aboutus" element = {<AboutUs/>}></Route>
-        <Route path ="/contactus" element = {<ContactUs/>}></Route>
-        <Route path ="/contactus/:id" element = {<ContactUsDetail/>}></Route>
-        <Route path ="/eletronics" element = {<Electronics/>}></Route>
-        <Route path ="/fashion" element = {<Fashion/>}></Route>
-        <Route path ="/g" element = {<Groc/>}></Route>
-        <Route path ="/simpleform" element = {<SimpleForm/>}></Route>
-      </Routes>
+       { <  Navbar/>} */}
+
+{/* <Routes>
+  <Route path ="/home" element = {<Home/>}></Route>
+  <Route path ="/aboutus" element = {<AboutUs/>}></Route>
+  <Route path ="/contactus" element = {<ContactUs/>}></Route>
+  <Route path ="/contactus/:id" element = {<ContactUsDetail/>}></Route>
+  <Route path ="/eletronics" element = {<Electronics/>}></Route>
+  <Route path ="/fashion" element = {<Fashion/>}></Route>
+  <Route path ="/g" element = {<Groc/>}></Route>
+  <Route path ="/simpleform" element = {<SimpleForm/>}></Route>
+</Routes> */}
 
     </div>
   );
