@@ -50,11 +50,9 @@ export const ApiDemo = () => {
 
   return (
     <div>
-        <button onClick={getData}>Get Data</button><br>
-        </br>
-        <button onClick={postData}>Post Data</button><br>
-        </br>
-        <button onClick={deleteData}>Delete Data</button><br></br>
+        <button onClick={getData}>Get Data</button>
+        <button onClick={postData}>Post Data</button>
+        <button onClick={deleteData}>Delete Data</button>
         <button onClick={updateData}>Update Data</button>
     </div>
   )
