@@ -14,13 +14,19 @@ import { SimpleForm } from './components/SimpleForm';
 import { EmployeeRagistration } from './components/EmployeeRagistration';
 import { ApiDemo } from './api/ApiDemo';
 
+import { Api } from './api/Api';
+import { Apidemo3 } from './api/Apidemo3';
+
 function App() {
 
   var title = "whatever"
 
   return (
     <div>
-      <ApiDemo/>
+      {/* <Apidemo3/> */}
+    
+    
+      {/* <ApiDemo/> */}
         {/* <EmployeeRagistration/>
 
        { <  Navbar/>} */}
