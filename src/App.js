@@ -14,8 +14,9 @@ import { SimpleForm } from './components/SimpleForm';
 import { EmployeeRagistration } from './components/EmployeeRagistration';
 import { ApiDemo } from './api/ApiDemo';
 
-import { Api } from './api/Api';
+
 import { Apidemo3 } from './api/Apidemo3';
+import { Apidemo2 } from './api/Apidemo2';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
   return (
     <div>
       {/* <Apidemo3/> */}
+      <Apidemo2/>
     
     
       {/* <ApiDemo/> */}
