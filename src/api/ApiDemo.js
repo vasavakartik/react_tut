@@ -54,6 +54,8 @@ export const ApiDemo = () => {
         <button onClick={postData}>Post Data</button>
         <button onClick={deleteData}>Delete Data</button>
         <button onClick={updateData}>Update Data</button>
+
+       
     </div>
   )
 }
