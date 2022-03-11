@@ -18,9 +18,14 @@ export const SelectDemo = () => {
             }
 
     ]
+    
+    var slectedoption
     const SelectChangeHandler =(e)=>{
-        setvalue(e.target.value)
-        console.log(value)
+        slectedoption = e.target.value;
+        alert(slectedoption)
+    }
+    const genderchange =(e)=>{
+        alert(e.target.value)
     }
   return (
     <div>
@@ -31,7 +36,13 @@ export const SelectDemo = () => {
                        return(<option value={option.value}>{option.label}</option>)
                    })
                }
-            </select>
+            </select> <br></br>
+                <label>Male</label> 
+                <input type="radio" name='gender' value="male" onChange={(e)=>{genderchange(e)}}/>
+                <label>female</label>
+                <input type="radio" name='gender' value="female"onChange={(e)=>{genderchange(e)}}/>
+                
+           
         </form>
     </div>
   )
