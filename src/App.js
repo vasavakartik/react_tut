@@ -17,6 +17,9 @@ import { ApiDemo } from './api/ApiDemo';
 
 import { Apidemo3 } from './api/Apidemo3';
 import { Apidemo2 } from './api/Apidemo2';
+import { FormDemo2 } from './api/FormDemo2';
+import { FileUpload } from './api/FileUpload';
+import { SelectDemo } from './components/SelectDemo';
 
 function App() {
 
@@ -24,8 +27,11 @@ function App() {
 
   return (
     <div>
+      <SelectDemo/>
+      {/* <FormDemo2/>
+      <FileUpload/> */}
       {/* <Apidemo3/> */}
-      <Apidemo2/>
+      {/* <Apidemo2/> */}
     
     
       {/* <ApiDemo/> */}
