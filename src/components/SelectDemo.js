@@ -1,7 +1,7 @@
 import React ,{useState} from 'react'
 
 export const SelectDemo = () => {
-    const [value, setvalue] = useState('volvo')
+    //const [value, setvalue] = useState('volvo')
 
     var options = [
             {
@@ -25,7 +25,11 @@ export const SelectDemo = () => {
         alert(slectedoption)
     }
     const genderchange =(e)=>{
-        alert(e.target.value)
+        alert("You Selected"+ " "+e.target.value)
+    }
+
+    const hobbychange =(e)=>{
+        alert("You Selected"+ " "+e.target.value)
     }
   return (
     <div>
@@ -40,7 +44,12 @@ export const SelectDemo = () => {
                 <label>Male</label> 
                 <input type="radio" name='gender' value="male" onChange={(e)=>{genderchange(e)}}/>
                 <label>female</label>
-                <input type="radio" name='gender' value="female"onChange={(e)=>{genderchange(e)}}/>
+                <input type="radio" name='gender' value="female"onChange={(e)=>{genderchange(e)}}/><br></br>
+
+               <label>Dancing</label>
+                <input type="checkbox" name='hobby' value="Dancing" onChange={(e)=>{hobbychange(e)}}/>
+                <label>Singing</label>
+                <input type="checkbox" name='hobby' value="Singing"onChange={(e)=>{hobbychange(e)}}/>
                 
            
         </form>

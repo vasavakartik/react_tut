@@ -20,6 +20,7 @@ import { Apidemo2 } from './api/Apidemo2';
 import { FormDemo2 } from './api/FormDemo2';
 import { FileUpload } from './api/FileUpload';
 import { SelectDemo } from './components/SelectDemo';
+import { Login } from './components/Login';
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
 
   return (
     <div>
-      <SelectDemo/>
+      <Login/>
+      {/* <SelectDemo/> */}
       {/* <FormDemo2/>
       <FileUpload/> */}
       {/* <Apidemo3/> */}
