@@ -20,10 +20,10 @@ export const ApiDemo = () => {
     }
 
     const deleteData = ()=>{
-        var id=2;
+        var id='';
         axios.delete("https://reqres.in/api/users" + id).then(res=>{
             console.log(res.status);
-            if(res.status == 204){
+            if(res.status === 204){
                 alert("Deleted Succesfully")
             }else{
                 console.log("Not deleted")
@@ -39,7 +39,7 @@ export const ApiDemo = () => {
             job:"crickter"
         }
         axios.put("https://reqres.in/api/users" +id,data).then(res=>{
-            if(res.status ==200){
+            if(res.status ===200){
                 alert("Updated Succesfully")
                 console.log(res.data)
             }else{

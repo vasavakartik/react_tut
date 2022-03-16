@@ -21,6 +21,10 @@ import { FormDemo2 } from './api/FormDemo2';
 import { FileUpload } from './api/FileUpload';
 import { SelectDemo } from './components/SelectDemo';
 import { Login } from './components/Login';
+import {Profile} from './components/Profile'
+import { Deletedate } from './api/Deletedate';
+import { Updatedata } from './api/Updatedata';
+
 
 function App() {
 
@@ -28,7 +32,7 @@ function App() {
 
   return (
     <div>
-      <Login/>
+     
       {/* <SelectDemo/> */}
       {/* <FormDemo2/>
       <FileUpload/> */}
@@ -37,11 +41,11 @@ function App() {
     
     
       {/* <ApiDemo/> */}
-        {/* <EmployeeRagistration/>
+        {/* <EmployeeRagistration/> */}
 
-       { <  Navbar/>} */}
+       { <  Navbar/>}
 
-{/* <Routes>
+ <Routes>
   <Route path ="/home" element = {<Home/>}></Route>
   <Route path ="/aboutus" element = {<AboutUs/>}></Route>
   <Route path ="/contactus" element = {<ContactUs/>}></Route>
@@ -50,7 +54,15 @@ function App() {
   <Route path ="/fashion" element = {<Fashion/>}></Route>
   <Route path ="/g" element = {<Groc/>}></Route>
   <Route path ="/simpleform" element = {<SimpleForm/>}></Route>
-</Routes> */}
+  <Route path='/profile' element={<Profile/>}></Route>
+  <Route path='/login' element={<Login/>}></Route>
+  <Route path='/table' element={<Apidemo3/>}></Route>
+  <Route path='/crud' element={<Deletedate/>}></Route>
+  <Route path='/update' element={<Updatedata/>}></Route>
+
+ 
+</Routes>
+{/* <Login/>  */}
 
     </div>
   );

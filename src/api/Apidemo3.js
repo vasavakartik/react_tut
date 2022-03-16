@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+import { Deletedate } from './Deletedate'
 
 
 export const Apidemo3 = () => {
@@ -16,6 +18,14 @@ export const Apidemo3 = () => {
     useEffect(() => {
         getData()
     }, [])
+
+    const deleteData=(id)=>{
+            {
+                axios.delete('https://reqres.in/api/users/${id}').then(res=>{
+        alert("res.status")
+    })
+            }
+    }
 
 
 
@@ -47,8 +57,9 @@ export const Apidemo3 = () => {
                                         <img src = {user.avatar}></img>
                                     </td>
                                     <td>
-                                        <button className = "btn btn-danger">DELETE</button>
-                                        <button className = "btn btn-primary">UPDATE</button>
+                                       <Link to={'table/data/$(user.id)'} className="btn btn-danger">Delete</Link>
+                                       <button onClick={()=>{deleteData(user.id)}}>Delete</button>
+                                        <Link to={'/update/$(user.id)'} className="btn btn-primary">Update</Link>
                                     </td>
                                     
                                 </tr>
