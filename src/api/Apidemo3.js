@@ -59,7 +59,7 @@ export const Apidemo3 = () => {
                                     <td>
                                        <Link to={'table/data/$(user.id)'} className="btn btn-danger">Delete</Link>
                                        <button onClick={()=>{deleteData(user.id)}}>Delete</button>
-                                        <Link to={'/update/$(user.id)'} className="btn btn-primary">Update</Link>
+                                       <Link to = {`/table/update/${user.id}`} className = "btn btn-primary">UPDATE</Link>
                                     </td>
                                     
                                 </tr>

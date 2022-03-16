@@ -58,7 +58,7 @@ function App() {
   <Route path='/login' element={<Login/>}></Route>
   <Route path='/table' element={<Apidemo3/>}></Route>
   <Route path='/crud' element={<Deletedate/>}></Route>
-  <Route path='/update' element={<Updatedata/>}></Route>
+  <Route path = "table/update/:id" element = {<Updatedata/>}></Route>
 
  
 </Routes>
