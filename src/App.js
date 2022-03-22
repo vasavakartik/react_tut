@@ -24,11 +24,19 @@ import { Login } from './components/Login';
 import {Profile} from './components/Profile'
 import { Deletedate } from './api/Deletedate';
 import { Updatedata } from './api/Updatedata';
+import { Props1 } from './components/Props1';
 
 
 function App() {
 
-  var title = "whatever"
+  var title = "whatever1"
+  var name = "jay1"
+
+
+  const demo = ()=>{
+
+    console.log("demo called.....")
+  }
 
   return (
     <div>
@@ -44,6 +52,7 @@ function App() {
         {/* <EmployeeRagistration/> */}
 
        { <  Navbar/>}
+       <Props1 title = {title} name ={name} demo = {demo}/>
 
  <Routes>
   <Route path ="/home" element = {<Home/>}></Route>
