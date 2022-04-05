@@ -36,21 +36,3 @@
     transform: rotate(360deg);
   }
 }
-h1 {
-  font-size: 3rem;
-  font-weight: 300;
-  text-align: center;
-  color: #61dafb;
-}
-button {
-
-  border-radius: 5px;
-
- color: aquamarine;
- background-color: black;
- margin-top: 100px;
- margin-left: 50px;
-}
-button :hover{
-  color: aquamarine;
-}
