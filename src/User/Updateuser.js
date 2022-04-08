@@ -11,12 +11,11 @@ export const Updateuser = () => {
   const [firstName, setfirstName] = useState(data.firstName);
   const [email, setemail] = useState(data.email);
   const [password, setpassword] = useState(data.password);
-  const [mobileNum, setmobailNum] = useState(data.mobileNum);
-  const [gender, setgender] = useState(data.gender);
-  const [isActive, setisActive] = useState(data.isActive);
+  const [phonenumber, setphonenumber] = useState(data.phonenumber);
+  const [address, setaddress] = useState(data.address)
 
   const getData = () => {
-    axios.get(`http://localhost:4001/users/${id}`).then((res) => {
+    axios.get(`http://localhost:4000/users/${id}`).then((res) => {
       setdata(res.data.data);
       console.log("**", res.data.data);
     });
@@ -27,18 +26,17 @@ export const Updateuser = () => {
   }, []);
 
   const update = (e) => {
-    //api calling...
+    
     var updatedData = {
       firstName: firstName,
       email: email,
       password: password,
-      mobileNum: mobileNum,
-      gender: gender,
-      isActive: isActive,
+      phonenumber: phonenumber,
+      address:address
     };
     e.preventDefault();
 
-    axios.put(`http://localhost:4001/users/${id}`, updatedData).then((res) => {
+    axios.put(`http://localhost:4000/users`, updatedData).then((res) => {
       alert("Data updated...");
     });
   };
@@ -71,30 +69,24 @@ export const Updateuser = () => {
             onChange={(e) => setpassword(e.target.value)}
           />
 
-          <label>Mobail Number</label>
+          <label>Mobile Number</label>
           <input
             type="text"
             class="form-control"
-            defaultValue={data.mobileNum}
-            onChange={(e) => setmobailNum(e.target.value)}
+            defaultValue={data.phonenumber}
+            onChange={(e) => setphonenumber(e.target.value)}
           />
 
-          {/* Gendor */}
-          <label>Gender</label>
+          
+          <label>Address</label>
           <input
             type="text"
             class="form-control"
-            defaultValue={data.gender}
-            onChange={(e) => setgender(e.target.value)}
+            defaultValue={data.address}
+            onChange={(e) => setaddress(e.target.value)}
           />
           
-          <label>isActive</label>
-          <input
-            type="text"
-            class="form-control"
-            defaultValue={data.isActive}
-            onChange={(e) => setisActive(e.target.value)}
-          />
+         
         </div>
 
         <button type="submit" class="btn btn-primary">

@@ -11,7 +11,7 @@ export const User_details = () => {
 
   const getData = () => {
       
-    axios.get("http://localhost:4001/users").then((res) => {
+    axios.get("http://localhost:4000/users").then((res) => {
       console.log("rolename",res.data.data[0].role.roleName);
       console.log("isActive",res.data.data[0].isActive);
 
@@ -23,7 +23,7 @@ export const User_details = () => {
   const DeleteData = (_id) => {
     if(window.confirm('Are you sure'))
     {
-      axios.delete(`http://localhost:4001/users/${_id}`).then((res) => {
+      axios.delete(`http://localhost:4000/users/${_id}`).then((res) => {
         alert(res.status);
       });
     }
@@ -47,11 +47,10 @@ export const User_details = () => {
           <th scope="col">Id</th>
           <th scope="col">User Name</th>
           <th scope="col">Email</th>
-          <th scope="col">Role</th>
-          <th scope="col">Gender</th>
+         
+          
           <th scope="col">Mobile No.</th>
-          <th scope="col">CreatedAt</th>
-          <th scope="col">isActive</th>
+         
           <th scope="col">Action</th>
 
           
@@ -65,15 +64,11 @@ export const User_details = () => {
               <th scope="row">{user._id}</th>
               <td>{user.firstName}</td>
               <td>{user.email}</td>
-              <td>{user.role.roleName}</td>
-              <td>{ user.gender}</td>
-              <td>{ user.mobileNum}</td>
-              <td>{ user.CreatedAt}</td>
-              <td>
-                {
-                  user.isActive? "True":"False"
-                }
-              </td>
+        
+              
+              <td>{ user.phonenumber}</td>
+              
+             
               
       
 

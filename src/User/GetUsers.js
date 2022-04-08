@@ -8,7 +8,7 @@ export const GetUsers = () => {
 
   const getData = () => {
       
-    axios.get("http://localhost:4001/users").then((res) => {
+    axios.get("http://localhost:4000/users").then((res) => {
       console.log(res.data.data);
       setuserList(res.data.data);
     });
@@ -16,7 +16,7 @@ export const GetUsers = () => {
 
   const DeleteData = (_id) => {
     {
-      axios.delete(`http://localhost:4001/users/${_id}`).then((res) => {
+      axios.delete(`http://localhost:4000/users/${_id}`).then((res) => {
         alert(res.status);
         getData();
       });

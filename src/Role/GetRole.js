@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 export const GetRole = () => {
@@ -13,8 +15,21 @@ export const GetRole = () => {
     };
     const DeleteData =(_id)=>{
         axios.delete(`http://localhost:4000/roles/${_id}`).then((res)=>{
-            alert(res.data);
+          toast.success('🦄 Data Deleted Successfully!', {
+            position: "top-center",
+            autoClose: 2500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark"
+        });
+           
+            
+          
             getData();
+            
         });
     };
 
