@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import {useState} from 'react'
 import axios from 'axios'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -17,16 +15,7 @@ export const Adduser = () => {
     axios.get("http://localhost:4000/roles").then((res) => {
       console.log(res.data.data);
       setroleList(res.data.data);
-      toast.success(`🦄 User Added Successfully!`, {
-        position: "top-center",
-        autoClose: 2500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark"
-    });
+      
     
     });
     
@@ -56,7 +45,8 @@ export const Adduser = () => {
     }
     
   return (
-    <div>
+    <div className='App'>
+      <h1>User</h1>
     <form onSubmit={submit}>
       <div class="form-group">
         <label>First Name</label>
@@ -108,17 +98,7 @@ export const Adduser = () => {
       <button type="submit" class="btn btn-primary">
         Submit
       </button>
-      <ToastContainer
-                    position="top-center"
-                    autoClose={2500}
-                    hideProgressBar={false}
-                    newestOnTop={false}
-                    closeOnClick
-                    rtl={false}
-                    pauseOnFocusLoss
-                    draggable
-                    pauseOnHover
-                />
+
     </form>
   </div>
   )

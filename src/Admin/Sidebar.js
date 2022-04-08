@@ -10,7 +10,7 @@ export default class Sidebar extends Component {
           {/* Brand Logo */}
           <a href="index3.html" className="brand-link">
             <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
-            <span className="brand-text font-weight-light">Portf</span>
+            <span className="brand-text font-weight-light">Portfolio</span>
           </a>
           {/* Sidebar */}
           <div className="sidebar">
@@ -43,10 +43,10 @@ export default class Sidebar extends Component {
                   </Link>
                   <ul className="nav nav-treeview">
                     <li className="nav-item">
-                      <a href="/getrole" className="nav-link">
+                      <Link to="/getrole" className="nav-link">
                         <i className="far fa-circle nav-icon" />
                         <p>GetRole</p>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
 
@@ -61,15 +61,15 @@ export default class Sidebar extends Component {
                   </a>
                   <ul className="nav nav-treeview">
                     <li className="nav-item">
-                      <Link to="/adduser" className="nav-link">
-                        <i class=" nav-icon far fa-plus-square"></i>
+                      <Link to="/" className="nav-link">
+                      <i class="nav-icon fa fa-user"></i>
                         <p>User</p>
                       </Link>
                     </li>
 
                     <li className="nav-item">
                       <Link to="/dashbord/user" className="nav-link">
-                        <i class=" nav-icon far fa-plus-square"></i>
+                      <i class="nav-icon fa fa-user"></i>
                         <p>Get User</p>
                       </Link>
                     </li>
@@ -83,10 +83,24 @@ export default class Sidebar extends Component {
                     <i className="nav-icon far fa-address-book" />
                     <p>
                       Subscription
-
+                      <i className="fas fa-angle-left right" />
                     </p>
                   </Link>
+                  <ul className="nav nav-treeview">
+                  <li className="nav-item">
+                      <Link to="/addsubs" className="nav-link">
+                      <i class="nav-icon fa fa-user"></i>
+                        <p>Add Sub</p>
+                      </Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link to="/getsubs" className="nav-link">
+                      <i class="nav-icon fa fa-user"></i>
+                        <p>Get Sub</p>
+                      </Link>
+                    </li>
 
+                  </ul>
                 </li>
 
                 <li className="nav-item has-treeview">

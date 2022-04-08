@@ -20,7 +20,12 @@ export default class Header extends Component {
     <li className="nav-item d-none d-sm-inline-block">
    
       <a href="/login" className="nav-link">Login</a>
-
+      
+    </li>
+    <li className="nav-item d-none d-sm-inline-block">
+   
+     
+      <a href="/adduser" className="nav-link">Ragister</a>
     </li>
     
   </ul>

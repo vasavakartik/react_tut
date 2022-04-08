@@ -16,6 +16,9 @@ import {Dashbord2} from './Dashbord2'
 import { Adduser } from "../User/Adduser";
 import Sidebar from "./Sidebar";
 import UserSubs from "../Subscription/UserSubs";
+import { AddSubs } from "../Subscription/AddSubs";
+import { GetSubs } from "../Subscription/GetSubs";
+import { UpdateSubs } from "../Subscription/UpdateSubs";
 
 export const Dashbord = () => {
   return (
@@ -32,6 +35,9 @@ export const Dashbord = () => {
         <Route path="/userdetails" element={<User_details />}></Route>
         <Route path="/user/updateuser/:userId" element={<Updateuser />}></Route>      
         <Route path="/usersubs" element={<UserSubs/>}></Route>
+        <Route path="/addSubs" element={<AddSubs/>}></Route>
+        <Route path="/getsubs" element={<GetSubs/>}></Route>
+        <Route path="/getsubs/updatesubs/:userId" element={<UpdateSubs/>}></Route>
       </Routes>
       <Footer />
     </div>
