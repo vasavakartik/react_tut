@@ -19,6 +19,7 @@ import UserSubs from "../Subscription/UserSubs";
 import { AddSubs } from "../Subscription/AddSubs";
 import { GetSubs } from "../Subscription/GetSubs";
 import { UpdateSubs } from "../Subscription/UpdateSubs";
+import { Addcomp } from "../Comapany/Addcomp";
 
 export const Dashbord = () => {
   return (
@@ -38,6 +39,7 @@ export const Dashbord = () => {
         <Route path="/addSubs" element={<AddSubs/>}></Route>
         <Route path="/getsubs" element={<GetSubs/>}></Route>
         <Route path="/getsubs/updatesubs/:userId" element={<UpdateSubs/>}></Route>
+        <Route path="/addcomp" element={<Addcomp/>}></Route>
       </Routes>
       <Footer />
     </div>

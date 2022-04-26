@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import {useState} from 'react'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
+
 
 
 
@@ -94,10 +96,11 @@ export const Adduser = () => {
                     )})}
                     </select>
       </div>
-
+      <Link to="/dashboard">
       <button type="submit" class="btn btn-primary">
         Submit
       </button>
+      </Link>
 
     </form>
   </div>

@@ -7,15 +7,17 @@ import { Adduser } from "./User/Adduser";
 
 
 
+
 function App() {
   return (
     <div className="wrapper">
    
       <Routes>
-        <Route path="/" element={<Lock/>}></Route>
+       
+         <Route path="/" element={<Lock/>}></Route>
         <Route path="/*" element={<Dashbord />}></Route>
         <Route path='/login' element={<Login/>}></Route>
-        <Route path="/adduser" element={<Adduser/>}></Route>
+        <Route path="/adduser" element={<Adduser/>}></Route> 
       </Routes>
 
     </div>

@@ -102,6 +102,24 @@ export default class Sidebar extends Component {
 
                   </ul>
                 </li>
+                <li className="nav-item has-treeview">
+                  <Link to="/addcomp" className="nav-link">
+                    <i className="nav-icon far fa-envelope" />
+                    <p>
+                      Company
+                      <i className="fas fa-angle-left right" />
+                    </p>
+                  </Link>
+                  <ul className="nav nav-treeview">
+                    <li className="nav-item">
+                      <Link to="/getcomp" className="nav-link">
+                        <i className="far fa-circle nav-icon" />
+                        <p>GetCompany</p>
+                      </Link>
+                    </li>
+                  </ul>
+
+                </li>
 
                 <li className="nav-item has-treeview">
                   <a href="#" className="nav-link">
